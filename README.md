@@ -1,4 +1,6 @@
-
+Insertion time
+-----
+On average 5s per 10,000 rows with unique index
 
 500,000 accounts, 2 account keys, 1 application key, no index
 -----

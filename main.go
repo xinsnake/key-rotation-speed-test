@@ -22,7 +22,7 @@ func init() {
 }
 
 func main() {
-	generateData(500000-387004, 387004)
+	generateData(1, 500000)
 }
 
 func hash(secret, data []byte) []byte {

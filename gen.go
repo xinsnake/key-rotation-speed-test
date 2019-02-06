@@ -41,6 +41,6 @@ func dataWorker(idChan <-chan int) {
 func generateRandomKey() []byte {
 	b := make([]byte, 16)
 	rand.Read(b)
-	// log.Printf("key: %s\n", hex.EncodeToString(b))
+	log.Printf("key: %s\n", hex.EncodeToString(b))
 	return b
 }
