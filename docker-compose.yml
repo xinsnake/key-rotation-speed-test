@@ -1,0 +1,23 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+    networks:
+      default_net:
+        ipv4_address: 172.16.238.5
+  adminer:
+    image: adminer
+    restart: always
+    networks:
+      default_net:
+        ipv4_address: 172.16.238.6
+networks:
+  default_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.16.238.0/24
